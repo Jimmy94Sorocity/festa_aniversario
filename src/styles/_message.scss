@@ -1,0 +1,48 @@
+@use "variables";
+
+.message {
+    background-color: variables.$yellow;
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+
+    &__form {
+        textarea {
+            resize: none;
+            height: 180px;
+            width: 320px;
+        }
+
+        &__input {
+            width: 320px;
+            display: block;
+            padding: 8px;
+            margin-left: 500px;
+            margin-bottom: 8px;
+            color: variables.$corHero;
+
+            &:focus {
+                outline-color: variables.$yellow;
+            }
+        }
+
+        &__button{
+            margin-left: 524px;
+            margin-top: 16px;
+            margin-bottom: 40px;
+            padding: 8px;
+            width: 240px;
+            background-color: variables.$corButton;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: variables.$corHoverButton;
+            }
+        }
+    }
+}

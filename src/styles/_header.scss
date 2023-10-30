@@ -1,0 +1,28 @@
+@use "variables";
+
+.header {
+    background-color: variables.$corDoHeader;
+    
+    &__container {
+        padding: 16px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+            color: variables.$corLogo;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            padding: 8px 0;
+            margin-right: 10px;
+            
+            a {
+                color: variables.$corLinks;
+            }
+        }
+    }
+}

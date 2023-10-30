@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__container__title">
+                Festa suprema
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#localizacao">Localização</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#mensagem">Mensagem</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero" id="localizacao">
+        <div class="hero__container">
+            <p class="hero__text">
+                A festa começa em: <br> 
+                <span id="contador"></span>
+            </p>
+        </div>
+    </section>
+    <section id="cardapio" class="event event--barbecue">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Churrasco</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nulla quia numquam hic soluta ratione culpa quae deserunt atque veniam, autem quod optio, voluptatibus sequi. Cumque aliquam commodi illum in!
+                </p>
+            </div>
+            <img class="event__image" src="./images/churrasco.jpg" alt="Churrasco">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--coxinha event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Salgados Diversos</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nulla quia numquam hic soluta ratione culpa quae deserunt atque veniam, autem quod optio, voluptatibus sequi. Cumque aliquam commodi illum in!
+                </p>
+            </div>
+            <img class="event__image" src="./images/salgados.jpg" alt="Coxinha">
+        </div>
+    </section>
+    <section class="event event--candy">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Doces Diversos</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nulla quia numquam hic soluta ratione culpa quae deserunt atque veniam, autem quod optio, voluptatibus sequi. Cumque aliquam commodi illum in!
+                </p>
+            </div>
+            <img class="event__image" src="./images/doces.jpg" alt="Brigadeiro">
+        </div>
+    </section>
+    <section class="event event--ice-cream event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Sorvetes</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nulla quia numquam hic soluta ratione culpa quae deserunt atque veniam, autem quod optio, voluptatibus sequi. Cumque aliquam commodi illum in!
+                </p>
+            </div>
+            <img class="event__image" src="./images/sorvetes.jpg" alt="Sorvetes">
+        </div>
+    </section>
+    <section id="mensagem" class="message">
+        <div class="message__container">
+            <h2 class="message__text">Mande sua mensagem</h2>
+            <form class="message__form">
+                <input class="message__form__input" type="text" placeholder="Seu nome"/>
+                <input  class="message__form__input"type="email" placeholder="Seu e-mail"/>
+                <textarea class="message__form__input" placeholder="Sua mensagem"></textarea>
+                <button class="message__form__button" type="submit">Celebrar!!!</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
